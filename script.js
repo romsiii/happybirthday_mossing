@@ -10,6 +10,15 @@ const imageModal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const modalClose = document.getElementById("imageModalClose");
 const mainIconsSection = document.querySelector(".main-icons");
+const backgroundMusic = document.getElementById("backgroundMusic");
+
+function playBackgroundMusic() {
+  if (!backgroundMusic) return;
+  backgroundMusic.volume = 0.35;
+  backgroundMusic.play().catch((error) => {
+    console.warn("Background music playback blocked or unavailable:", error);
+  });
+}
 
 function createConfetti(){
 
@@ -56,6 +65,7 @@ function createConfetti(){
 
 envelope.addEventListener("click", () => {
   envelope.classList.add("open");
+  playBackgroundMusic();
 
   setTimeout(() => {
     document.querySelector(".opening-screen").style.display = "none";
