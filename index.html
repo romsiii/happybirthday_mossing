@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Mossing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Home -->
+  <section class="opening-screen">
+
+    <h1>Happy Birthday, Mossing!</h1>
+
+    <img class="opening-icon" src="sealion.png" alt="Sealion">
+
+    <div class="envelope-wrapper" id="envelopeWrapper">
+
+      <div class="envelope">
+
+        <div class="letter">
+          <h2><br><br>For You</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="click-text">Click the envelope</p>
+
+  </section>
+
+  <!-- MAIN -->
+  <div class="main-content" id="mainContent">
+
+    <section class="main-icons">
+      <h1>These are for you!</h1>
+
+      <div class="icon-row">
+        <div class="icon-card icon-letter" data-label="letter">
+          <img class="icon" src="envelope.png" alt="Envelope icon">
+          <span>Letter</span>
+        </div>
+        <div class="icon-card icon-flowers" data-label="flowers">
+          <img class="icon" src="flowers.png" alt="Flowers icon">
+          <span>Flowers</span>
+        </div>
+        <div class="icon-card icon-cake" data-label="cake">
+          <img class="icon" src="cake.png" alt="Cake icon">
+          <span>Cake</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section letter-detail" id="letterSection">
+      <div class="letter-split">
+        <div class="letter-copy">
+
+          <h1> YOU ARE AN AMAZING PERSON</h1>
+
+          <div class="letter-envelope-wrapper" id="letterPreviewWrapper">
+            <div class="envelope letter-preview-envelope">
+            </div>
+          </div>
+          <p class="click-text preview-click-text">Click the envelope</p>
+        </div>
+
+        <div class="photo-collage">
+          <div class="photo photo-1"><img src="photo1.jpg" alt="Photo 1"><span class="photo-caption">With Whole Networth</span></div>
+          <div class="photo photo-2"><img src="photo2.jpg" alt="Photo 2"><span class="photo-caption">RESEARCH DONE!</span></div>
+          <div class="photo photo-3"><img src="photo3.jpg" alt="Photo 3"><span class="photo-caption">Pogi</span></div>
+          <div class="photo photo-4"><img src="photo5.jpg" alt="Photo 4"><span class="photo-caption">Pretty</span></div>
+          <div class="photo photo-5"><img src="photo4.jpg" alt="Photo 5"><span class="photo-caption">Default</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section letter-open-section" id="letterOpenSection">
+      <div class="letter-open-layout">
+        <div class="letter-open-card">
+          <div class="letter-full-card">
+            <div class="letter-heading"> Click to view whole letter</div>
+            <div class="letter-body">
+              <img class="letter-open-image" src="theletter.png" alt="Letter image">
+            </div>
+          </div>
+          <button class="back-button">Back</button>
+        </div>
+
+        <div class="open-photo-collage">
+          <div class="open-photo"><img src="photo6.jpg" alt="Photo 1"></div>
+          <div class="open-photo"><img src="photo7.jpg" alt="Photo 2"></div>
+          <div class="open-photo"><img src="photo8.jpg" alt="Photo 3"></div>
+          <div class="open-photo"><img src="photo9.jpg" alt="Photo 4"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section flowers-detail" id="flowersSection">
+      <div class="flowers-detail-card">
+        <div class="flower-preview">
+          <div class="flower-preview-inner">
+            <img src="bouquet.png" alt="Bouquet image">
+            <div class="flower-bubble-top bubble-top">Flowers for a beautiful person</div>
+            <div class="flower-bubble bubble-top-left">You are kind, sweet, and caring</div>
+            <div class="flower-bubble bubble-top-right">Beautiful inside and out, dyosa yarn</div>
+            <div class="flower-bubble bubble-left-center">Smart and witty, matakot kayo sa puksaan </div>
+            <div class="flower-bubble bubble-right-center">Strongest person I know</div>
+            <div class="flower-bubble bubble-bottom-left">Funny, jusq humor on top, mapapatawa ang lahat</div>
+            <div class="flower-bubble bubble-bottom-right">Honest, alam mo kung ano ang totoo at dapat</div>
+            <div class="flower-bubble bubble-bottom-center">YOU ARE PERFECT! <br>wala nang kailangan baguhin</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button class="back-button">Back</button>
+    </section>
+
+    <section class="detail-section cake-detail" id="cakeSection">
+      <div class="cake-detail-layout">
+        <div class="cake-main-card">
+          <div class="cake-interactive-container">
+            <div class="cake" id="interactiveCake" onclick="toggleCandles()">
+              <div class="top-tier"></div>
+              <div class="middle-tier"></div>
+              <div class="bottom-tier"></div>
+
+              <div class="candles-top" id="cakeCandlesTop"></div>
+              <div class="candles-middle" id="cakeCandlesMiddle"></div>
+              <div class="candles-bottom" id="cakeCandlesBottom"></div>
+
+              <div class="cake-message" id="cakeMessage"> HAPPY BIRTHDAY MOSSING! </div>
+            </div>
+          </div>
+          <div class="cake-text">
+            <h2>Isang Buong Handa</h2>
+            <p>Virtual man pero may handa hehe. Blow mo na candles mo mossing and make a wish (click mo yung cake)</p>
+          </div>
+        </div>
+        <div class="cake-gallery">
+          <div class="cake-frame frame-large"><img src="karekare.jpg" alt="Food photo 1"></div>
+          <div class="cake-frame frame-small frame-top-right"><img src="zagu.png" alt="Food photo 2"></div>
+          <div class="cake-frame frame-small frame-bottom-left"><img src="cheesedonut.jpg" alt="Food photo 3"></div>
+          <div class="cake-frame frame-medium frame-bottom-right"><img src="chicken.jpg" alt="Food photo 4"></div>
+          <div class="cake-frame frame-accent frame-center"><img src="chilioil.jpg" alt="Food photo 5"></div>
+        </div>
+      </div>
+      <button class="back-button">Back</button>
+    </section>
+
+  </div>
+
+  <div class="image-modal" id="imageModal">
+    <div class="image-modal-content">
+      <button class="image-modal-close" id="imageModalClose" aria-label="Close full image preview">×</button>
+      <img id="modalImage" src="theletter.png" alt="Full-size letter preview">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
